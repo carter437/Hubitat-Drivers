@@ -91,7 +91,6 @@ metadata {
         input("ip", "string", title:"IP", description:"Shelly IP Address", defaultValue:"" , required: true)
         input name: "username", type: "text", title: "Username:", description: "(blank if none)", required: false
         input name: "password", type: "password", title: "Password:", description: "(blank if none)", required: false
-        if (ip == null) input("channel", "number", title:"Relay Channel", description:"0,1,2,or 3 :", defaultValue:"0" , required: true) // Show at device setup only
 
         if (ip != null) { // show settings *after* IP is set as some settings do not apply to all devices
 
